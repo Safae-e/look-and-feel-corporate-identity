@@ -1,20 +1,19 @@
-# Corporate Identity
-
-Ontwerp en maak voor een opdrachtgever een website op basis van een bestaande huisstijl.
-
-De instructie vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/look-and-feel-corporate-identity/blob/main/docs/INSTRUCTIONS.md)
 
 
 # Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+ Tumi Mundo project
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Uit diverse onderzoeken blijkt dat het tweetalig opvoeden van kinderen grote voordelen met zich mee brengt. In dit project willen ze dit stimuleren door jonge kinderen naar verhalen te laten luisteren in verschillende talen. Op deze site kun je in het menu zien wat je allemaal kan doen. 
+
+![image](https://github.com/user-attachments/assets/4aa1bd7a-fce9-4ebb-8ed0-1f2899146cfd)
+
+Je kan in de statistics zien hoelang je kind de website heeft gebruikt. 
+![image](https://github.com/user-attachments/assets/b5eb9a47-1bd4-43e1-a68b-bbc808814aa3)
+
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+
 
 ## Bronnen
 
