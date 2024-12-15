@@ -9,7 +9,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* font-family: var(--font-poppins); */
+    font-family: var(--font-poppins);
     margin: 0;
     display: grid;
     justify-content: center;
@@ -81,85 +81,172 @@ ul {
 /* Statistics */
 .body-statistics{
     min-height: 100vh;
-    background-color: #219b9b;
     background-image: linear-gradient(#219b9b, #144C5E);
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: poppins;
-    display: grid;
-    justify-content: center;
+    font-family: var(--font-poppins);
+    /* display: grid;
+    /*justify-content: center;
     align-items: center;
-    grid-template-columns: 1.2fr 1.5fr;
+    grid-template-columns: 1.2fr 1.5fr; */
+}
+
+@media (min-width:500px) {
+    .body-statistics {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1.2fr 1.5fr;
+    }
 }
 
 .stat-h1 {
-    font-size: 32px;
+    /* font-size: 32px; */
+    margin-left: 75px;
+    
 }
 
-.stat-h2 {
-    margin-left: 280px;
-    margin-top: 100px;
+@media (min-width: 500px) {
+    .stat-h1 {
+        color: hotpink;
+        text-align: center;
+    }
 }
+
+
+.stat-h2 {
+    margin-left: 10px;
+    margin-top: 35px;
+}
+
+@media (min-width:500px ) {
+    .stat-h2 {
+        margin-left: 280px;
+        margin-top: 100px;
+    }
+}
+
 
 .stat-h3 {
     color: #FFFFFF;
-    margin-left: 145px;
-    margin-top: 65px;
-    font-size: 24px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+}
+
+@media (min-width:500px) {
+    .stat-h3 {
+        color: #FFFFFF;
+        margin-left: 145px;
+        margin-top: 65px;
+        font-size: 24px;
+    }
 }
 
 .time {
-    margin-left: 175px;
-    font-size: 50px;
+    margin-left: 85px;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+@media (min-width:500px) {
+    .time {
+        margin-left: 175px;
+        font-size: 50px;
+    }
 }
 
 .stat-5-minute {
-    margin-left: 135px;
-    font-size: 22px;
+    margin-left: 35px;
+    margin-top: 0px;
 }
 
+@media (min-width:500px) {
+    .stat-5-minute {
+        margin-left: 135px;
+        font-size: 22px;
+    }
+}
+
+
 .muis-op-bank {
-    margin-left: 25%;
-    margin-bottom: 50px;
-    grid-column: 2;
-   
+   width: 250px; 
+   margin-left: 15%;
+   margin-top: 50%;
+}
+
+@media (min-width:500px) {
+    .muis-op-bank {
+        width: 500px;
+        margin-left: 25%;
+        margin-bottom: 50px;
+        grid-column: 2;
+       
+    }
 }
 
 .half-circle {
-    width: 450px;
-    height: 230px;
+    width: 250px;
+    height: 125px; 
     border-top-left-radius: 300px;
     border-top-right-radius: 300px;
     border: 10px solid #70CFAD;
     border-bottom: 0;
-    position: absolute;
-    margin-left:160px;
-    margin-top: 5px;
-    margin-bottom: 100px;
+     position: absolute;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: px;
 
+}
+
+@media (min-width:500px) {
+    .half-circle {
+        width: 450px;
+        height: 230px; 
+        border-top-left-radius: 300px;
+        border-top-right-radius: 300px;
+        border: 10px solid #70CFAD;
+        border-bottom: 0;
+         position: absolute;
+        margin-left:160px;
+        margin-top: 5px;
+        margin-bottom: 100px;
+    
+    }
 }
 
 .change-goal {
-    background-color: #27B16F;
-    color: #fff;
-    width: 220px;
-    height: 60px ;
-    padding: 10px 20px;
-    border-radius: 12px;
-    font-size: 22px;
-    border: none;
-    margin-top: 10%;
+    width: 125px;
+    
+}
+
+@media (min-width: 500px) {
+    .change-goal {
+        width: 220px;
+        height: 60px ;
+        padding: 10px 20px;
+        border-radius: 12px;
+        font-size: 22px;
+        border: none;
+        margin-top: 10%;
+    }
 }
     
 .go-to-stories {
-    background-color: #9264F4;
-    color: #fff;
-    width: 220px;
-    height: 60px;
-    padding: 10px 20px;
-    border-radius: 12px;
-    font-size: 22px;
-    border: none;
+    margin-left: 125px;
+    width: 125px;
+    margin-bottom: px;
+}
+
+@media (min-width:500px) {
+    .go-to-stories {
+        width: 220px;
+        height: 60px;
+        padding: 10px 20px;
+        border-radius: 12px;
+        font-size: 22px;
+        border: none;
+    }
 }
 
 .statistic-h2 {
@@ -170,7 +257,7 @@ margin-left: 35%;
     margin-left: 25%;
 }
 
-section {
+ section {
     grid-column-start: 1;
     grid-column-end: 3;
 }
