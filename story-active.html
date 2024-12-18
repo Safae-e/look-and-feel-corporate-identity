@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story-active</title>
+    <Link rel="stylesheet" href="story-active.css">
+    <script src="specificity.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://kitkatisvibing.github.io/look-and-feel-styleguide/tumimundo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<header>
+    <a href="index.html"><img src="./assets/Caret left.svg"></a>
+    <img src="./assets/Frame 14285.svg">
+
+</header>
+
+
+<main>
+    <div id="subtitles"></div>
+</main>
+
+
+<footer>
+    <!-- <button class="button">
+        <div class="play"></div>
+    </button> -->
+
+
+    <!-- <button class="volume"></button> -->
+    <audio id="audio" controls>
+        <source src="ENGELS - IT WAS 8 O_CLOCK - LUCIE.mp3" type="audio/mp3">
+        <!-- <track kind="subtitles" label="English subtitles" src="ENGELS - IT WAS 8 O-CLOCK - LUCIE.vtt" srclang="en" default></track> -->
+        Uw browser ondersteunt geen audio element.
+
+    </audio>
+</footer>
+
+
+<script>
+    // Het audio-element en het ondertitel-container-element
+    const audio = document.getElementById('audio');
+    const subtitleDiv = document.getElementById('subtitles');
+            const playPauseButton = document.getElementById('playPauseButton');
+
+
+    // Ondertitels in de vorm van een array met tijdstippen en tekst
+    const subtitles = [
+        { start: 0, end: 3, text: "It was eight o'clock in the morning and the red" },
+        { start: 3, end: 6, text: "hot sun was burning bright" },
+        { start: 6, end: 9, text: "The sky was blue and the air dry as it was." },
+        { start: 9, end: 12, text: "already heating up"},
+        { start: 12, end: 17, text: "Just when he woke up, the lazyboy heard his mother call him." },
+        { start: 17, end: 18, text: "Yes, I'm awake." },
+        { start: 18, end: 20, text: "I'll be down soon." },
+        { start: 20, end: 23, text: "Give me one minute, he replied." },
+        { start: 23, end: 27, text: "His pet, a black cat, wassitting near the leg of" },
+        { start: 27, end: 30, text: "the bed as if he wantedto say good morning." },
+
+    ];
+
+    // Functie om de ondertitels weer te geven
+    function displaySubtitles() {
+        const currentTime = audio.currentTime; // Huidige afspeeltijd van de audio
+        subtitleDiv.innerHTML = ''; // Verwijder eerdere ondertitels
+
+        // Loop door de ondertitels en kijk of ze moeten worden weergegeven
+        for (let i = 0; i < subtitles.length; i++) {
+            if (currentTime >= subtitles[i].start && currentTime <= subtitles[i].end) {
+                subtitleDiv.innerHTML = subtitles[i].text; // Toon de bijbehorende ondertitel
+                break; // Stop de loop zodra een ondertitel wordt weergegeven
+            }
+        }
+    }
+
+    // Voeg een event listener toe om de ondertitels elke keer bij te werken
+    audio.addEventListener('timeupdate', displaySubtitles);
+</script>
+
+</body>
+</html>

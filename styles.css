@@ -19,10 +19,10 @@
 
 
 h1 {
-    margin-left: 10px;
+    margin-right: 200px;
     grid-column: 2;
     grid-row: 1;
-    font-size: 26px;
+    font-size: 14px;
     color: #FFFFFF;
 }
 
@@ -85,10 +85,10 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: var(--font-poppins);
-    /* display: grid;
-    /*justify-content: center;
+    display: grid;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: 1.2fr 1.5fr; */
+    grid-template-columns: 1.2fr 1.5fr;
 }
 
 @media (min-width:500px) {
@@ -100,24 +100,22 @@ ul {
     }
 }
 
-.stat-h1 {
-    /* font-size: 32px; */
+/* .stat-h1 {
     margin-left: 75px;
     
-}
+} */
 
 @media (min-width: 500px) {
     .stat-h1 {
-        color: hotpink;
         text-align: center;
     }
 }
 
 
-.stat-h2 {
+/* .stat-h2 {
     margin-left: 10px;
     margin-top: 35px;
-}
+} */
 
 @media (min-width:500px ) {
     .stat-h2 {
@@ -127,12 +125,12 @@ ul {
 }
 
 
-.stat-h3 {
+/* .stat-h3 {
     color: #FFFFFF;
     margin-left: 40px;
     margin-top: 30px;
 
-}
+} */
 
 @media (min-width:500px) {
     .stat-h3 {
@@ -143,11 +141,11 @@ ul {
     }
 }
 
-.time {
+/* .time {
     margin-left: 85px;
     font-size: 25px;
     margin-top: 0px;
-}
+} */
 
 @media (min-width:500px) {
     .time {
@@ -156,10 +154,10 @@ ul {
     }
 }
 
-.stat-5-minute {
+/* .stat-5-minute {
     margin-left: 35px;
     margin-top: 0px;
-}
+} */
 
 @media (min-width:500px) {
     .stat-5-minute {
@@ -169,11 +167,11 @@ ul {
 }
 
 
-.muis-op-bank {
+/* .muis-op-bank {
    width: 250px; 
    margin-left: 15%;
    margin-top: 50%;
-}
+} */
 
 @media (min-width:500px) {
     .muis-op-bank {
@@ -185,7 +183,7 @@ ul {
     }
 }
 
-.half-circle {
+/* .half-circle {
     width: 250px;
     height: 125px; 
     border-top-left-radius: 300px;
@@ -197,7 +195,7 @@ ul {
     margin-top: 25px;
     margin-bottom: px;
 
-}
+} */
 
 @media (min-width:500px) {
     .half-circle {
@@ -215,10 +213,10 @@ ul {
     }
 }
 
-.change-goal {
+/* .change-goal {
     width: 125px;
     
-}
+} */
 
 @media (min-width: 500px) {
     .change-goal {
@@ -232,11 +230,11 @@ ul {
     }
 }
     
-.go-to-stories {
+/* .go-to-stories {
     margin-left: 125px;
     width: 125px;
     margin-bottom: px;
-}
+} */
 
 @media (min-width:500px) {
     .go-to-stories {
